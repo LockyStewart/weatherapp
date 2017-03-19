@@ -6,6 +6,10 @@ class Conditions
     @conditions = HTTParty.get("http://api.wunderground.com/api/b9eca8144b43a825/conditions/q/#{zipcode}.json")
   end
 
+  def data_hash
+    @conditions
+  end
+
   def current_conditions
     @city = @conditions["current_observation"]['display_location']['city']
     @temperature = @conditions["current_observation"]['temp_f']
@@ -23,4 +27,5 @@ class Conditions
   def city
     @city = @conditions["current_observation"]['display_location']['city']
   end
+
 end

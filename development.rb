@@ -6,4 +6,6 @@ zipcode = gets.chomp.to_i
 
 location = Conditions.new(zipcode)
 puts location.current_conditions
-puts location.city
+
+# sd1 = Conditions.new(92116)
+# p sd1.data_hash
