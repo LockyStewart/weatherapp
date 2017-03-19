@@ -6,3 +6,4 @@ zipcode = gets.chomp.to_i
 
 location = Conditions.new(zipcode)
 puts location.current_conditions
+puts location.city
