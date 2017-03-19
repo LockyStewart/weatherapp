@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/untz'
+require './location_class.rb'
 require './development.rb'
 
 class API_test < Minitest::Test
