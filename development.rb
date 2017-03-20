@@ -1,5 +1,5 @@
 require 'httparty'
-require './location_class.rb'
+require './conditions.rb'
 
 puts 'Welcome to your weather app! Please enter a zipcode.'
 zipcode = gets.chomp.to_i

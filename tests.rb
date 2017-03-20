@@ -1,6 +1,6 @@
 require 'minitest/autorun'
 require 'minitest/untz'
-require './location_class.rb'
+require './conditions.rb'
 
 class Conditions
   def get
